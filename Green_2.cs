@@ -15,7 +15,7 @@ namespace Lab_8
         {
             _output = Array.Empty<char>();
         }
-        public override void Review() // Метод для вывода букв, с которых начинаются слова.
+        public override void Review() // Метод махинаций.
         {
             string text = Input.ToLower();
             char[] letters = new char[] { 'а', 'б', 'в', 'г', 'д', 'е', 'ё', 'ж', 'з', 'и', 'й',
