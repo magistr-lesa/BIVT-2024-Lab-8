@@ -55,7 +55,7 @@ namespace Lab_8
         {
             return Output == null || Output.Length == 0
                 ? string.Empty
-                : string.Join("\r\n", Output);
+                : string.Join(Environment.NewLine, Output);
         }
     }
 }
