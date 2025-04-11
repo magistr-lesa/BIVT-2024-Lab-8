@@ -64,8 +64,7 @@ namespace Lab_8
         {
             return Output == null || Output.Length == 0
                 ? string.Empty
-                : string.Join("\r\n", Array.ConvertAll(Output, item => $"{item.Item1} - {item.Item2:F4}"));
+                : string.Join(Environment.NewLine, Array.ConvertAll(Output, item => $"{item.Item1} - {item.Item2:F4}"));
         }
-
     }
 }
