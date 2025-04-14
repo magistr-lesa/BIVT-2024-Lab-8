@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,6 +18,5 @@ namespace Lab_8
             _input = input;
         }
         public abstract void Review(); // Абстрактный метод для всех действий.
-        public abstract string ToString(); // Абстрактный метод для работы с итоговыми данными.
     }
 }
