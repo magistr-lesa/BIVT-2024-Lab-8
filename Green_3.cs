@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -40,7 +40,7 @@ namespace Lab_8
                     index++;
                 }
             }
-            _output = foundWords;
+            _output = foundWords.Distinct().ToArray();
         }
         public override string ToString() // Метод обработки итоговых данных.
         {
