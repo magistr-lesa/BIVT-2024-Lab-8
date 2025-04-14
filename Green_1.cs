@@ -1,25 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+using System;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace Lab_8
 {
     public class Green_1 : Green // Публичный наследник.
     {
-        private (char, double)[] _output; // Массив кортежей вывода. 
+        private (char, double)[] _output; // Массив кортежей вывода.
         public (char, double)[] Output => _output; // Его свойство.
-        public Green_1 (string input) : base(input) // Конструктор.
+        public Green_1(string input) : base(input) // Конструктор.
         {
             _output = Array.Empty<(char, double)>();
         }
         public override void Review() // Метод махинаций.
         {
             string text = Input.ToLower();
-            char[] letters = new char[] { 'а', 'б', 'в', 'г', 'д', 'е', 'ё', 'ж', 'з', 'и', 'й',
-                                          'к', 'л', 'м', 'н', 'о', 'п', 'р', 'с', 'т', 'у', 'ф',
-                                          'х', 'ц', 'ч', 'ш', 'щ', 'ъ', 'ы', 'ь', 'э', 'ю', 'я' };
+            char[] letters = new char[]
+            {
+                'а', 'б', 'в', 'г', 'д', 'е', 'ё', 'ж', 'з', 'и', 'й',
+                'к', 'л', 'м', 'н', 'о', 'п', 'р', 'с', 'т', 'у', 'ф',
+                'х', 'ц', 'ч', 'ш', 'щ', 'ъ', 'ы', 'ь', 'э', 'ю', 'я'
+            };
             int[] counts = new int[letters.Length];
             int totalLetters = 0;
             for (int i = 0; i < text.Length; i++)
@@ -30,10 +30,10 @@ namespace Lab_8
                     if (c == letters[j])
                     {
                         counts[j]++;
-                        totalLetters++;
                         break;
                     }
                 }
+                if (char.IsLetter(c)) { totalLetters++; }
             }
             if (totalLetters == 0)
             {
