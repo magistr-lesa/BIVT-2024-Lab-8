@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +10,6 @@ namespace Lab_8
     {
         private char[] _output; // Массив выходных символов.
         public char[] Output => _output; // Его свойство.
-
         public Green_2(string input) : base(input) // Конструктор.
         {
             _output = Array.Empty<char>();
