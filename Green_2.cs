@@ -12,7 +12,7 @@ namespace Lab_8
         public char[] Output => _output; // Его свойство.
         public Green_2(string input) : base(input) // Конструктор.
         {
-            _output = Array.Empty<char>();
+            _output = null;
         }
         public override void Review() // Метод махинаций.
         {
