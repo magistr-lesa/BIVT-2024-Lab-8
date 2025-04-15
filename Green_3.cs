@@ -13,7 +13,7 @@ namespace Lab_8
         public string[] Output => _output; // Свойство выходных символов.
         public Green_3(string input, string posled) : base(input) // Конструктор.
         {
-            _output = Array.Empty<string>();
+            _output = null;
             _posled = posled;
         }
         public override void Review() // Метод махинаций.
