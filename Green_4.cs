@@ -14,7 +14,7 @@ namespace Lab_8
         public Green_4(string input) : base(input) // Конструктор.
         {
             _input = input;
-            _output = Array.Empty<string>();
+            _output = null;
         }
         public override void Review() // Метод махинаций.
         {
