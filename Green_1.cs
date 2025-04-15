@@ -9,7 +9,7 @@ namespace Lab_8
         public (char, double)[] Output => _output; // Его свойство.
         public Green_1(string input) : base(input) // Конструктор.
         {
-            _output = Array.Empty<(char, double)>();
+            _output = null;
         }
         public override void Review() // Метод махинаций.
         {
